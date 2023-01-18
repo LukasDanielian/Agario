@@ -15,15 +15,15 @@ int id = -1;
 void setup()
 {
   //SETTINGS
-  //fullScreen();
-  size(1920, 1080);
+  fullScreen();
+  //size(1920, 1080);
   rectMode(CENTER);
   shapeMode(CENTER);
   textAlign(CENTER, CENTER);
   frameRate(144);
 
   //VARIABLE DECLARATION
-  client = new Client(this, "192.168.50.54", 1234);//SERVER IP
+  client = new Client(this, "127.0.0.1", 1234);//SERVER IP
   player = new Player();
   mapSize = 5000;
   centerX = width/2;
